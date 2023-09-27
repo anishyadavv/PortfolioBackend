@@ -15,7 +15,7 @@ app.post("/contact", (req, res) => {
         requireTLS: true,
         auth: {
           user: "anishyadav7853@gmail.com",
-          pass: "ceaqjzkdrecljnde",
+          pass: process.env.PASSWORD
         },
       });
       var success = false;
